@@ -3,6 +3,10 @@
 #include <QPainter>
 #include <QTime>
 #include <QMessageBox>
+#include <QPixmap>
+#include <iostream>
+
+using namespace std;
 
 Game::Game()
 {
@@ -139,6 +143,7 @@ void Game::check_apple()
         localApple();
 
     }
+
 }
 
 
@@ -157,6 +162,8 @@ void Game::initGame()
 
     localApple();
 
+
     m_timerId = startTimer(DELAY);
 }
+
 
